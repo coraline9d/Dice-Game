@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+}
+
+/*globalsheet appareance*/
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.side0,
+.side1 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding: 15%;
+}
+
+.name {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.score {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 7rem;
+}
+
+.active { 
+    background-color: #f7f7f7; 
+}
+
+.active .name { 
+    font-weight: 300; 
+}
+
+
+/*scare appareance*/
+.scare {
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 55%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.name-scare {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #222;
+}
+
+.score-scare {
+    font-size: 2rem;
+}
+
+
+/*button appareance*/
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.new { 
+    top: 5%;
+}
+
+.roll { 
+    top: 60%;
+}
+
+.hold { 
+    top: 70%;
+}
+    /*icons appareance*/
+    svg {
+        color: #EB4D4D;
+        display: inline-block;
+        margin-right: 4px;
+        line-height: 1;
+        vertical-align: text-top;
+        margin-top: -1px;
+        transition: margin 0.3s;
+    }
+
+
+/*dice appareance*/
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    height: 12%;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+/*winner appareance*/
+.winner { 
+    background-color: #f7f7f7; 
+}
+
+.winner .name { 
+    font-weight: 300; 
+    color: #EB4D4D; 
+}
+
+
+/*effects*/
+.active .name::after {
+    content: "\2022";
+    font-size: 3rem;
+    position: absolute;
+    color: #EB4D4D;
+    top: 10%;
+    right: 100%;  
+}
+
+button:hover { 
+    font-weight: 600; 
+}
+
+button:hover i { 
+    margin-right: 2rem; 
+}
+
+button:focus {
+    outline: none;
+}

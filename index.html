@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--character font-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <!--framework css-->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <!--file css-->
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <title>Dice Game</title>
+    </head>
+
+    <body>
+        <div class="back">
+            <!--side left-->
+            <div class="side0 active">
+                <div class="name" id="name0">Player A</div>
+                <div class="score" id="score0"></div>
+                <div class="scare">
+                    <div class="name-scare">Current</div>
+                    <div class="score-scare" id="score-scare0"></div>
+                </div>
+            </div>
+            
+            <!--side right-->
+            <div class="side1">
+                <div class="name" id="name1">Player B</div>
+                <div class="score" id="score1"></div>
+                <div class="scare">
+                    <div class="name-scare">Current</div>
+                    <div class="score-scare" id="score-scare1"></div>
+                </div>
+            </div>
+            
+            <!--button to do a new game-->
+            <button class="new" onClick="editNames()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-box-arrow-in-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z"/>
+                    <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                </svg>
+                New Game
+            </button>
+
+            <!--button to turn dice-->
+            <button class="roll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                </svg>
+                Roll dice
+            </button>
+
+            <!--button to save-->
+            <button class="hold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-box-arrow-in-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z"/>
+                    <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                </svg>
+                Hold
+            </button>
+            
+            <!--picture of the dice-->
+            <img src="images/dice5.png" alt="Dice" class="dice">
+        </div>
+
+        <!--file js-->
+        <script src="script.js"></script>
+    </body>
+</html>
