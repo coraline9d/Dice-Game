@@ -10,7 +10,7 @@
 
 4. Chaque score sauvegardé s'ajoute à l'ancien.
 
-**Problème :** Lorsqu'un participant tombe sur la phase 1 du dé, son addition active est supprimé et c'est à l'autre joueur de lancer le dé.
+**Problème :** Lorsqu'un participant tombe sur la phase 1 du dé, son addition active est supprimée et c'est à l'autre joueur de lancer le dé.
 
 5. Le gagnant est celui qui arrive à 100 points en premier.
 
